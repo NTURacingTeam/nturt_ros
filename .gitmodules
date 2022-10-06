@@ -1,0 +1,21 @@
+[submodule "nturt_bag_recorder"]
+	path = nturt_bag_recorder
+	url = https://github.com/NTURacingTeam/nturt_bag_recorder.git
+[submodule "nturt_can_parser"]
+	path = nturt_can_parser
+	url = https://github.com/NTURacingTeam/nturt_can_parser.git
+[submodule "nturt_gps"]
+	path = nturt_gps
+	url = https://github.com/NTURacingTeam/nturt_gps.git
+[submodule "nturt_ros_interface"]
+	path = nturt_ros_interface
+	url = https://github.com/NTURacingTeam/nturt_ros_interface.git
+[submodule "nturt_rpi_deployer"]
+	path = nturt_rpi_deployer
+	url = https://github.com/NTURacingTeam/nturt_rpi_deployer.git
+[submodule "nturt_state_controller"]
+	path = nturt_state_controller
+	url = https://github.com/NTURacingTeam/nturt_state_controller.git
+[submodule "nturt_torque_controller"]
+	path = nturt_torque_controller
+	url = https://github.com/NTURacingTeam/nturt_torque_controller.git

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>nturt_ros</name>
+    <version>0.0.0</version>
+    <description>ROS metapackage for NTU racing team.</description>
+    <maintainer email="jet22854111@gmail.com">QuantumSpawner</maintainer>
+    <author email="jet22854111@gmail.com">QuantumSpawner</author>
+    <license>TODO</license>
+
+    <!-- buile dependencies -->
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <!-- execute dependencies -->
+    <exec_depend>nturt_bag_recorder</exec_depend>
+    <exec_depend>nturt_can_parser</exec_depend>
+    <exec_depend>nturt_gps</exec_depend>
+    <!-- <exec_depend>nturt_push_to_control_tower</exec_depend> -->
+    <exec_depend>nturt_ros_interface</exec_depend>
+    <exec_depend>nturt_rpi_deployer</exec_depend>
+    <exec_depend>nturt_state_controller</exec_depend>
+    <exec_depend>nturt_torque_controller</exec_depend>
+
+    <export><metapackage/></export>
+</package>
