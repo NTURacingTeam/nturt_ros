@@ -4,7 +4,7 @@
 ##### Person in charge: 羅紀翔
 ##### Authors: 羅紀翔
 ##### Subsystem: RPI
-##### Subsystem number: RPI
+##### Subsystem number: RP1
 ##### Software name: ros_metapackage
 ##### Repository: [github](https://github.com/NTURacingTeam/nturt_ros)
 ##### Started designing date: 2022/10/6
@@ -43,7 +43,7 @@ N/A
 
 ---
 
-## Testing result of 1.O:
+## Testing result of 1.0:
 
 ### Cloning this repository with all submodules
 
@@ -65,4 +65,4 @@ git submodule update
 
 All submodules updated successfully.
 
-## Todos in 1.O:
+## Todos in 1.0:
