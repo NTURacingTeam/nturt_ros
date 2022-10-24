@@ -22,11 +22,11 @@ git submodule update
 
 ## Known issue
 
-### Compiling error due to ros messages/services
+### Compiling error due to ros messages/services  (fixed, maybe)
 
 Since the source and header files for ros msg/srv in `nturt_ros_interface` is generated during compile time, sometimes cmake will run into errors that says it can not find some include files for ros msg/srv. In such case, the easist solution might just be to compile(running `catkin_make`) multiple times until it compiles successfully.
 
-### Compiling error due to `wiringPi` (only for arm computer that`s not rpi)
+### Compiling error due to `wiringPi` (only for arm computer that`s not rpi)  (fixed, maybe)
 
 Since `wiringPi` is a preinstalled package only for raspberry pi and no other computer can installed properly. Yet it's still required (in c++) in order to control gpios of rpi.
 
