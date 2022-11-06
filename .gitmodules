@@ -19,3 +19,6 @@
 [submodule "nturt_torque_controller"]
 	path = nturt_torque_controller
 	url = https://github.com/NTURacingTeam/nturt_torque_controller.git
+[submodule "nturt_push_to_control_tower"]
+	path = nturt_push_to_control_tower
+	url = https://github.com/NTURacingTeam/nturt_push_to_control_tower.git
