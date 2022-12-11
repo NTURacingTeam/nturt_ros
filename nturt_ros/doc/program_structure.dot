@@ -1,7 +1,7 @@
 digraph program_structure {
-    graph [fontname="Times"];
-    node [shape=ellipse style=filled fontname="Times" color="#ea9999" fillcolor="#f4cccc"];
-    edge [fontname="Times" color=blue];
+    graph [fontname="Times"]
+    node [shape=ellipse style=filled fontname="Times" color="#ea9999" fillcolor="#f4cccc"]
+    edge [fontname="Times"]
     
     nturt_bag_recorder_node [label=nturt_bag_recorder_node]
     nturt_can_parser_node [label=nturt_can_parser_node]
@@ -13,23 +13,27 @@ digraph program_structure {
     rosmaster [label=rosmaster]
     socket_can_bridge_node [label=socket_can_bridge_node]
     
-    nturt_can_parser_node->socket_can_bridge_node [label="/sent_messages"]
+    // communication
+    // message
+    edge [color=blue]
+    nturt_can_parser_node->nturt_bag_recorder_node [label="/sent_messages"]
     nturt_can_parser_node->nturt_push_to_control_tower_node [label="/can_notification"]
     nturt_can_parser_node->nturt_state_controller_node [label="/can_notification"]
     nturt_can_parser_node->nturt_torque_controller_node [label="/can_notification"]
+    nturt_can_parser_node->socket_can_bridge_node [label="/sent_messages"]
     nturt_gps_node->nturt_bag_recorder_node [label="/GPS_fix"]
     nturt_gps_node->nturt_push_to_control_tower_node [label="/GPS_fix"]
     nturt_state_controller_node->nturt_torque_controller_node [label="/node_state"]
+    nturt_torque_controller_node->nturt_push_to_control_tower_node [label="/torque_controller_data"]
     rosmaster->nturt_led_controller_node [label="/rosout"]
     socket_can_bridge_node->nturt_bag_recorder_node [label="/received_messages"]
     socket_can_bridge_node->nturt_can_parser_node [label="/received_messages"]
     socket_can_bridge_node->nturt_led_controller_node [label="/received_messages"]
     
+    // service
     edge [color=green]
-    
     nturt_state_controller_node->nturt_can_parser_node [label="/update_can_data"]
     nturt_torque_controller_node->nturt_can_parser_node [label="/update_can_data"]
-    
     
     subgraph cluster_legend {
 		style=filled
@@ -38,11 +42,11 @@ digraph program_structure {
 		label = legend
         {rank=same n0 n1 n2 n3}
         nodes[label="node"]
-        n0 [label= "" shape=none height=.0 width=.0]
-        n1 [label= "" shape=none height=.0 width=.0]
-        n2 [label= "" shape=none height=.0 width=.0]
-        n3 [label= "" shape=none height=.0 width=.0]
+        n0 [label="" shape=none height=0 width=0]
+        n1 [label="" shape=none height=0 width=0]
+        n2 [label="" shape=none height=0 width=0]
+        n3 [label="" shape=none height=0 width=0]
         n0->n1 [label=topic color=blue]
-        n2->n3 [label=service color=lawngreen]
+        n2->n3 [label=service color=green]
 	}
 }

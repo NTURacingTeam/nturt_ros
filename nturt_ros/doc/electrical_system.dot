@@ -10,45 +10,45 @@ digraph electrical_system {
             style=dashed
             label=dashboard_box
             {rank=same display stm32_dashboard}
-            display[label=display]
-            stm32_dashboard[label=stm32]
+            display [label=display]
+            stm32_dashboard [label=stm32]
         }
 
         subgraph cluster_front_box {
             style=dashed
             label=front_box
             {rank=same rpi stm32_front}
-            rpi[label=rpi]
-            stm32_front[label=stm32]
+            rpi [label=rpi]
+            stm32_front [label=stm32]
         }
 
         subgraph cluster_rear_box {
             style=dashed
             label=rear_box
-            stm32_rear[label=stm32]
+            stm32_rear [label=stm32]
         }
         
-        inverter[label=inverter]
-        server[label=server]
+        inverter [label=inverter]
+        server [label=server]
     }
     
     subgraph sensor {
         node [color="#6d9eeb" fillcolor="#a4c2f4"]
-        accelerator[label=accelerator]
-        brake[label=brake]
-        button[label=button]
-        gps[label=gps]
-        imu[label=imu]
-        steering_wheel[label=steering_wheel]
-        tire_temperature[label=tire_temperature]
-        wheel_speed[label=wheel_speed]
+        accelerator [label=accelerator]
+        brake [label=brake]
+        button [label=button]
+        gps [label=gps]
+        imu [label=imu]
+        steering_wheel [label=steering_wheel]
+        tire_temperature [label=tire_temperature]
+        wheel_speed [label=wheel_speed]
     }
     
     subgraph utility {
         node [color="#93c47d" fillcolor="#b6d7a8"]
-        alarm[label=alarm]
-        brake_light[label=brake_light]
-        indicator_light[label=indicator_light]
+        alarm [label=alarm]
+        brake_light [label=brake_light]
+        indicator_light [label=indicator_light]
     }
     
     // communication
@@ -98,9 +98,9 @@ digraph electrical_system {
 		color="#ffe599"
         fillcolor="#fff2cc"
 		label =legend
-        controller[color="#ea9999" fillcolor="#f4cccc" lable=controller]
-        sensor[color="#6d9eeb" fillcolor="#a4c2f4" label=sensor]
-        utility[color="#93c47d" fillcolor="#b6d7a8" label=utility]
+        controller [color="#ea9999" fillcolor="#f4cccc" label=controller]
+        sensor [color="#6d9eeb" fillcolor="#a4c2f4" label=sensor]
+        utility [color="#93c47d" fillcolor="#b6d7a8" label=utility]
         
         subgraph cluster_communication_protocol {
             color=black
@@ -108,18 +108,18 @@ digraph electrical_system {
             label="communication protocol"
             {rank=same n0 n1 n2 n3 n4 n5}
             {rank=sink n6 n7 n8 n9 n10 n11}
-            n0 [label= "" shape=none height=.0 width=.0]
-            n1 [label= "" shape=none height=.0 width=.0]
-            n2 [label= "" shape=none height=.0 width=.0]
-            n3 [label= "" shape=none height=.0 width=.0]
-            n4 [label= "" shape=none height=.0 width=.0]
-            n5 [label= "" shape=none height=.0 width=.0]
-            n6 [label= "" shape=none height=.0 width=.0]
-            n7 [label= "" shape=none height=.0 width=.0]
-            n8 [label= "" shape=none height=.0 width=.0]
-            n9 [label= "" shape=none height=.0 width=.0]
-            n10 [label= "" shape=none height=.0 width=.0]
-            n11 [label= "" shape=none height=.0 width=.0]
+            n0 [label="" shape=none height=0 width=0]
+            n1 [label="" shape=none height=0 width=0]
+            n2 [label="" shape=none height=0 width=0]
+            n3 [label="" shape=none height=0 width=0]
+            n4 [label="" shape=none height=0 width=0]
+            n5 [label="" shape=none height=0 width=0]
+            n6 [label="" shape=none height=0 width=0]
+            n7 [label="" shape=none height=0 width=0]
+            n8 [label="" shape=none height=0 width=0]
+            n9 [label="" shape=none height=0 width=0]
+            n10 [label="" shape=none height=0 width=0]
+            n11 [label="" shape=none height=0 width=0]
             n0->n1 [label=can arrowhead=none color=blue]
             n2->n3 [label=i2c color=yellow]
             n4->n5 [label=uart color=green]
