@@ -1,0 +1,41 @@
+repositories:
+  nmea_navsat_driver:
+    type: git
+    url: https://github.com/ros-drivers/nmea_navsat_driver
+    version: ros2
+  nturt_bag_recorder:
+    type: git
+    url: https://github.com/NTURacingTeam/nturt_bag_recorder.git
+    version: ros2
+  nturt_can_config:
+    type: git
+    url: https://github.com/NTURacingTeam/nturt_can_config.git
+    version: master
+  nturt_can_parser:
+    type: git
+    url: https://github.com/NTURacingTeam/nturt_can_parser.git
+    version: ros2
+  nturt_led_controller:
+    type: git
+    url: https://github.com/NTURacingTeam/nturt_led_controller.git
+    version: ros2
+  nturt_push_to_control_tower:
+    type: git
+    url: https://github.com/NTURacingTeam/nturt_push_to_control_tower.git
+    version: ros2
+  nturt_realtime_utils:
+    type: git
+    url: https://github.com/NTURacingTeam/nturt_realtime_utils.git
+    version: ros2
+  nturt_ros_interfaces:
+    type: git
+    url: https://github.com/NTURacingTeam/nturt_ros_interfaces.git
+    version: ros2
+  nturt_rpi_deployer:
+    type: git
+    url: https://github.com/NTURacingTeam/nturt_rpi_deployer.git
+    version: ros2
+  ros2_socket_can:
+    type: git
+    url: https://github.com/NTURacingTeam/ros2_socketcan.git
+    version: main

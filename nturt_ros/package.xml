@@ -12,14 +12,16 @@
     <buildtool_depend>ament_cmake</buildtool_depend>
 
     <!-- execute dependencies -->
-    <!-- <exec_depend>nturt_bag_recorder</exec_depend> -->
+    <exec_depend>nturt_bag_recorder</exec_depend>
+    <exec_depend>nturt_can_config</exec_depend>
     <exec_depend>nturt_can_parser</exec_depend>
-    <!-- <exec_depend>nturt_gps</exec_depend> -->
     <exec_depend>nturt_led_controller</exec_depend>
-    <!-- <exec_depend>nturt_push_to_control_tower</exec_depend> -->
+    <exec_depend>nturt_push_to_control_tower</exec_depend>
     <exec_depend>nturt_realtime_utils</exec_depend>
     <exec_depend>nturt_ros_interface</exec_depend>
     <exec_depend>nturt_rpi_deployer</exec_depend>
+    <exec_depend>nturt_screen_controller</exec_depend>
+    <exec_depend>ros2_socket_can</exec_depend>
 
     <export>
         <build_type>ament_cmake</build_type>

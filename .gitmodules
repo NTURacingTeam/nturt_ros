@@ -1,3 +1,7 @@
+[submodule "nmea_navsat_driver"]
+	path = nmea_navsat_driver
+	url = https://github.com/ros-drivers/nmea_navsat_driver.git
+	branch = ros2
 [submodule "nturt_bag_recorder"]
 	path = nturt_bag_recorder
 	url = https://github.com/NTURacingTeam/nturt_bag_recorder.git
@@ -10,9 +14,6 @@
 	path = nturt_can_parser
 	url = https://github.com/NTURacingTeam/nturt_can_parser.git
 	branch = ros2
-[submodule "nturt_gps"]
-	path = nturt_gps
-	url = https://github.com/NTURacingTeam/nturt_gps.git
 [submodule "nturt_led_controller"]
 	path = nturt_led_controller
 	url = https://github.com/NTURacingTeam/nturt_led_controller.git
@@ -32,6 +33,9 @@
 	path = nturt_rpi_deployer
 	url = https://github.com/NTURacingTeam/nturt_rpi_deployer.git
 	branch = ros2
+[submodule "nturt_screen_controller"]
+	path = nturt_screen_controller
+	url = https://github.com/NTURacingTeam/nturt_screen_controller.git
 [submodule "ros2_socketcan"]
 	path = ros2_socketcan
 	url = https://github.com/NTURacingTeam/ros2_socketcan.git
