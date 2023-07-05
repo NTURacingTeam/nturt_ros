@@ -21,7 +21,7 @@
     <exec_depend>nturt_ros_interface</exec_depend>
     <exec_depend>nturt_rpi_deployer</exec_depend>
     <exec_depend>nturt_screen_controller</exec_depend>
-    <exec_depend>ros2_socket_can</exec_depend>
+    <exec_depend>ros2_socketcan</exec_depend>
 
     <export>
         <build_type>ament_cmake</build_type>

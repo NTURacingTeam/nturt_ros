@@ -35,7 +35,7 @@ repositories:
     type: git
     url: https://github.com/NTURacingTeam/nturt_rpi_deployer.git
     version: ros2
-  ros2_socket_can:
+  ros2_socketcan:
     type: git
     url: https://github.com/NTURacingTeam/ros2_socketcan.git
     version: main
