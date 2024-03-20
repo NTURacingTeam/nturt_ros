@@ -31,6 +31,8 @@ in the ros workspace source directory (such as ~/ws/src/).
 The dependencies of this package can be automatically installed using `rosdep`:
 
 ```shell=
+sudo apt-get update
+sudo apt-get upgrade
 rosdep install --from-paths src --ignore-src -r -y
 ```
 
