@@ -5,6 +5,7 @@
     <version>0.0.0</version>
     <description>ROS2 metapackage for NTU racing team.</description>
     <maintainer email="jet22854111@gmail.com">QuantumSpawner</maintainer>
+    <maintainer email="chris920325@gmail.com">CHYang25</maintainer>
     <author email="jet22854111@gmail.com">QuantumSpawner</author>
     <license>TODO</license>
 

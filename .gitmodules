@@ -40,3 +40,6 @@
 	path = ros2_socketcan
 	url = https://github.com/NTURacingTeam/ros2_socketcan.git
 	branch = main
+[submodule "nturt_nmea_navsat_driver"]
+	path = nturt_nmea_navsat_driver
+	url = https://github.com/NTURacingTeam/nturt_nmea_navsat_driver.git
